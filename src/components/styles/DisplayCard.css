@@ -1,0 +1,178 @@
+.card {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.712);
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 1000;
+
+}
+
+.inner-card {
+    width: 90%;
+    height: 90%;
+    background-color: #D3B998;
+    color: #2C2C22;
+    border-radius: 10px;
+    position: relative;
+    top: 5%;
+}
+
+.inner-card button {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    top: -30px;
+    z-index: 10;
+}
+
+.inner-card button i {
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    color: white;
+}
+
+.event-display {
+    display: flex;
+    padding: 20px;
+}
+
+.event-register {
+    width: 40%;
+    padding: 20px 0px;
+    margin-right: 20px;
+}
+.register-column{
+    gap: 20px;
+}
+.event-register p {
+    font-family: 'Airwings';
+    font-size: 20px;
+    margin: 0px;
+}
+
+.event-register h6 {
+    margin: 0px 0px 5px 0px;
+    font-size: 25px;
+}
+
+.event-register a {
+    font-family: 'Airwings';
+    text-decoration: solid;
+    color: #D3B998;
+    background-color: #2C2C22;
+    font-size: 30px;
+    border: 2px solid #2C2C22;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+.displayCardDesc {
+    padding: 0px 10px 10px;
+    overflow-y: scroll;
+    height: 80dvh;
+
+}
+
+.displayCardDesc h1 {
+    margin: 0px;
+    text-decoration: underline;
+}
+
+.displayCardDesc h2 {
+    font-family: 'Airwings';
+    text-decoration: underline;
+    font-size: 2.5rem;
+    margin: 10px 0px;
+    width: fit-content;
+}
+
+.displayCardDesc p {
+    font-size: 30px;
+    width: 80%;
+    margin: 5px 0px;
+    text-align: justify;
+}
+
+
+.displayCardDesc ::-webkit-scrollbar {
+    width: 10px;
+}
+
+.displayCardDesc::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px #6e6e6e4f;
+}
+.displayCardDesc ::-webkit-scrollbar-thumb {
+    background: #a8a8a863;
+}
+
+
+@media (max-width: 480px) {
+    .inner-card {
+        width: 85%;
+        height: 93%;
+        position: relative;
+    }
+
+    .event-display {
+        display: flex;
+        flex-direction: column;
+        gap: 5px 0px;
+    }
+
+    .event-register {
+        display: flex;
+        gap: 0px 10px;
+        justify-content: space-around;
+        align-items: start;
+        width: 90%;
+        padding: 0px 10px;
+        margin-right: 0px;
+        position: sticky;
+    }
+    .event-register a{
+        margin-top: 0px;
+    }
+
+    .details {
+        width: 50%;
+        display: inline;
+    }
+    .register-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 10px 0px;
+    }
+    .displayCardDesc {
+        overflow-y: scroll;
+        height: 53dvh;
+    }
+    .displayCardDesc h1 {
+        font-size: 2.5rem;
+    }
+    
+    .displayCardDesc h2 {
+        font-size: 2rem;
+    }
+    
+    .displayCardDesc p {
+        width: 95%;
+        font-size: 25px;
+    }
+
+}

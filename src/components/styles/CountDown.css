@@ -1,0 +1,16 @@
+.count-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.count-grid h1 {
+  font-size: 2.5rem;
+  color: #55ff55;
+}
+
+.count-grid p {
+  font-size: 1.2rem;
+  color: #aaa;
+}

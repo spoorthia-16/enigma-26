@@ -1,0 +1,72 @@
+.team-design {
+  height: fit-content;
+  padding: 10px 20px;
+}
+
+.team-design h1 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 2.2rem;
+  margin: 10px 10px 30px 10px;
+  color: #55ff55;
+  text-shadow: 2px 2px #003300, 4px 4px #000;
+}
+
+.team-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-top: 30px;
+}
+
+.team-containers h2 {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.8rem;
+  margin: 10px 10px 30px 10px;
+  text-decoration: underline;
+}
+
+.team-card-contianer {
+  margin: 0px 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  gap: 30px 0px;
+}
+
+.teamCard {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.team-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.team-ribbon {
+  position: absolute;
+  bottom: -15%;
+  left: -10%;
+  transform: translateY(10%);
+  width: 275px;
+}
+
+.teamCard p {
+  font-size: 30px;
+  width: max-content;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-38%, 10%);
+  margin: 0px;
+  z-index: 2;
+}
+
+@media (max-width: 480px) {
+  .team-card-contianer {
+    margin: 30px 15%;
+    grid-template-columns: repeat(1, 0fr);
+  }
+}

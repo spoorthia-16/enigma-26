@@ -1,0 +1,6 @@
+bat_flying.png: 165x170 (4 frames)
+bee_idle.png: 153x146 (172 frames)
+cherryBlossomPetals_back.png: 512x512 (60 frames)
+cherryBlossomPetals_front.png: 256x256 (120 frames)
+chicken_idle_front.png: 64x69 (93 frames)
+pig_idle.png: 88x83 (36 frames)

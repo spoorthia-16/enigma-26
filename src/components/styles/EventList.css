@@ -1,0 +1,12 @@
+.event-heading-design {
+    height: fit-content;
+}
+
+.event-heading-design h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 2rem;
+    margin: 20px 20px 30px;
+    width: 100%;
+    color: #55ff55;
+    text-shadow: 2px 2px #003300, 4px 4px #000;
+}

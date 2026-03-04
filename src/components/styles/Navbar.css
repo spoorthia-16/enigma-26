@@ -1,0 +1,47 @@
+.mc-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 12px 0px;
+
+  background: rgba(0, 0, 0, 0.95);
+  border-bottom: 3px solid #3f3f3f;
+
+  z-index: 1000;
+}
+
+/* LOGO */
+.nav-logo {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.2rem;
+  color: #55ff55;
+}
+
+/* LINKS */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* REMOVE BLUE LINKS */
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover {
+  color: #55ff55;
+  text-shadow: 0 0 5px #55ff55;
+}

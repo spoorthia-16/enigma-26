@@ -1,0 +1,59 @@
+.techs-design{
+    background-image: url(/vintage.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 30px 0px;
+    padding: 50px;
+    color: #2C2C22;
+}
+
+.techs-design h1{
+    font-family: 'Airwings';
+    font-size: 3rem;
+    margin: 10px 0px ;
+}
+.techs-inner{
+    display: flex;
+    gap: 20px;
+}
+.techs-inner img{
+    width: 400px;
+}
+
+.techs-inner p{
+    font-size: 30px;
+    margin: auto 10px;
+}
+
+.techs-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.techs-content a{
+    margin: 0px 10px;
+    font-size: 35px;
+    font-weight: bold;
+    width: fit-content;
+    padding: 5px;
+    border: 1px solid #2C2C22;
+}
+
+@media(max-width: 480px){
+    .techs-design{
+        background-size:  500%;
+        padding: 20px;
+    }
+    .techs-inner{
+        flex-direction: column;
+    }
+    .techs-inner img{
+        width: 100%;
+    }
+    .techs-inner p{
+        font-size: 25px;
+        margin: 10px;
+    }
+    
+}

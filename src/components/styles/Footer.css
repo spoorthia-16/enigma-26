@@ -1,0 +1,168 @@
+.foot {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.ohter-sites {
+    margin: 20px;
+    display: block;
+}
+
+.ohter-sites h1 {
+    font-size: 3rem;
+    font-family: 'Airwings';
+    margin-left: 20px;
+}
+
+.sitesLinks {
+    display: flex;
+
+}
+
+.sitesLinks a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    line-height: 50px;
+    background: rgb(44, 44, 34);
+    background: linear-gradient(180deg, rgba(44, 44, 34, 1) 0%, rgba(44, 44, 34, 0.4514180672268907) 40%, rgba(44, 44, 34, 0.45702030812324934) 60%, rgba(44, 44, 34, 1) 100%);
+    padding: 20px;
+}
+
+
+
+footer {
+    background-image: url(/vintage.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 50px 50px 20px;
+    color: #2C2C22;
+    display: block;
+}
+
+footer a {
+    text-decoration: none;
+    color: #2C2C22;
+}
+
+.contact {
+    display: flex;
+    gap: 0px 30px;
+    justify-content: space-around;
+}
+
+.contact h3 {
+    font-size: 30px;
+}
+
+.quickLinks {
+    display: flex;
+    flex-direction: column;
+}
+
+.quickLinks a,
+.stayCard a {
+    margin-bottom: 2px;
+    font-size: 30px;
+}
+
+.stayCard {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    margin: 0px 50px;
+}
+
+.address p {
+    margin: 5px 0px;
+    font-size: 30px;
+}
+
+.develop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: none;
+}
+
+@media(max-width: 480px) {
+    .ohter-sites h1 {
+        margin-left: 10px;
+    }
+
+    .sitesLinks {
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+
+    .sitesLinks a {
+        margin: 10px 0px;
+        font-size: 30px;
+        line-height: 40px;
+        padding: 20px;
+    }
+
+    footer {
+        background-size: 600%;
+        padding: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+
+    }
+
+    .stayCard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .social-icons {
+        display: block;
+        display: flex;
+        gap: 0px 10px;
+    }
+
+    .address {
+        align-items: flex-start;
+        margin: 10px 0px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .develop {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+
+    }
+
+    .develop p {
+        margin: 0px;
+        width: fit-content;
+        font-size: 15px;
+    }
+}

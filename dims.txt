@@ -1,0 +1,11 @@
+bat_flying.png:660x170
+bee_idle.png:26316x146
+cherryBlossomPetals_back.png:30720x512
+cherryBlossomPetals_front.png:30720x256
+chicken_idle_front.png:5952x69
+chicken_idle_right.png:6048x69
+chicken_turning_front_left_right.png:11160x69
+chicken_turning_right_front_left.png:11340x69
+pig_idle.png:3168x83
+pig_turning.png:8624x83
+pig_walking_right.png:1280x83

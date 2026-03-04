@@ -1,0 +1,97 @@
+.schedule {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.scheduleHeading {
+    margin: 10px 0px;
+}
+
+.scheduleHeading h1 {
+    margin: 5px 0px 30px;
+    font-size: 2.2rem;
+    font-family: 'Press Start 2P', monospace;
+    color: #55ff55;
+    text-shadow: 2px 2px #003300, 4px 4px #000;
+}
+
+.schedule-container {
+    display: flex;
+}
+
+.scheduleDates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 5%;
+    background: rgb(217, 217, 217);
+    background: linear-gradient(90deg, rgba(217, 217, 217, 0.5010796554950105) 0%, rgba(217, 217, 217, 0.0753093473717612) 50%, rgba(217, 217, 217, 0.4954774145986519) 100%);
+    padding: 5px 20px;
+
+}
+
+.scheduleDates h1 {
+    font-weight: 900;
+}
+
+.scheduleDates h1:hover {
+    scale: 1.1;
+}
+
+.scheduleDates span {
+    font-size: 20px;
+}
+
+.scheduleContent {
+    width: 85%;
+    border: 1px solid white;
+    margin-left: 40px;
+}
+
+.scheduleContent ul {
+    position: relative;
+    top: 45%;
+    transform: translateY(-50%);
+    margin: 0px;
+}
+
+.scheduleContent li {
+    margin: 15px 0px;
+    font-size: 35px;
+}
+
+.activeDiv {
+    color: rgb(255, 243, 17);
+}
+
+.previous {
+    background-color: none;
+}
+
+@media(max-width: 480px) {
+    .schedule {
+        width: 90%;
+    }
+
+    .schedule-container {
+        flex-direction: column;
+        gap: 10px 0px;
+    }
+
+    .scheduleDates {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 90%;
+    }
+
+    .scheduleContent {
+        width: 100%;
+        margin: 0px;
+
+    }
+
+    .scheduleContent ul {
+        transform: translateY(0);
+
+    }
+}

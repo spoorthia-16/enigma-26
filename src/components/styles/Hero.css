@@ -1,0 +1,130 @@
+section{
+    height: 90dvh;
+}
+
+.hero-design{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    background-image: url(/bg.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+.hero-bg{
+    z-index: 0;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.Hero-content{
+    color: #E1AA3B;
+    z-index: 5;
+    padding: 10px;
+}
+
+
+:-webkit-any(article, aside, nav, section) h1 { 
+    margin-block-start: 0px; 
+    margin-block-end: 0px;
+}
+
+.Hero-content h1{
+    font-size: 10rem;
+    margin: 0px;
+    font-family: 'Megatron';
+    z-index: 0;
+    height: fit-content;
+    filter: contrast(1.5);
+}
+.Hero-content h2{
+    font-size: 40px;
+    margin: 10px;
+    font-family: 'RetroSerif';
+    z-index: 3;
+    filter: contrast(1.5);
+}
+.Hero-content h3{
+    font-size: 35px;
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 5;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    bottom: 10%;
+    filter: contrast(1.5);
+}
+.heroSponsor{
+    position: relative;
+    /* top: 130px; */
+    /* left: 55%; */
+    width: fit-content;
+    margin: auto;
+    border-radius: 5px;
+    padding: 0px 20px 10px; 
+}
+.heroSponsor p{
+    font-size: 25px;
+    font-weight: 900;
+    margin: 10px 0px;
+    color: white;
+    filter: contrast(1.8);
+    z-index: 5;
+    position: relative;
+    
+}
+.heroSponsor img{
+    width: 180px;
+    margin: 0px;
+}
+@media(max-width: 480px){
+
+    .hero-design{
+        background-image: url(/bg1.svg);
+        background-position: center center;
+        background-size: 100%;
+    }
+    .hero-bg{
+        width: 95%;
+        height: 45%;
+        background-color: rgba(255, 255, 255, 0.1);
+
+    }
+    
+    .Hero-content{
+        margin-bottom: 5px;
+    }
+
+    .Hero-content h1{
+        font-size: 4rem;
+    }
+    .Hero-content h2{
+        font-size: 30px;
+        margin: 10px;
+
+    }
+    .Hero-content h3{
+        font-size: 20px;
+        margin: 0px;
+        width: 70%;
+        left: 30%;
+    }
+    .heroSponsor{
+        top: 10px;
+        left: 0px;
+        color: #E1AA3B;
+    }
+    .heroSponsor p{
+        background-color: rgba(17, 17, 17, 0.4);
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 30px;
+
+    }
+}
+

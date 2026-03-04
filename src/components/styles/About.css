@@ -1,0 +1,36 @@
+.about-design{
+    background-image: url(/vintage.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 30px 0px;
+    padding: 50px;
+    color: #2C2C22;
+}
+
+.about-design h1{
+    font-family: 'Airwings';
+    font-size: 3rem;
+    margin: 10px 30px;
+}
+
+.about-design p{
+    width: 90%;
+    font-size: 30px;
+    margin: 10px 30px;
+
+}
+
+@media(max-width: 480px){
+    .about-design{
+        background-size:  500%;
+        padding: 20px;
+    }
+
+    .about-design h1, .about-design p{
+        margin: 10px;
+    }
+    
+    
+    
+}

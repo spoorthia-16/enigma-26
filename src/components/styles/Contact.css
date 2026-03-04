@@ -1,0 +1,81 @@
+.contact-details {
+    padding: 20px;
+}
+
+.contact-details h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 2.2rem;
+    margin: 10px 0px 30px;
+    color: #55ff55;
+    text-shadow: 2px 2px #003300, 4px 4px #000;
+}
+
+.contact-container h2 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 1.8rem;
+    margin: 10px 0px 30px;
+}
+
+.contact-card {
+    display: flex;
+    width: 60%;
+    border: 1px solid white;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card-left {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card-left p {
+    font-size: 35px;
+    margin: 10px 0px 0px 0px;
+}
+
+.card-left span {
+    font-size: 25px;
+    margin: 0px 0px;
+    color: rgb(194, 194, 194);
+}
+
+.card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: flex-end;
+    font-family: 'Airwings';
+}
+
+.card-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.terms-container h2 {
+    font-family: 'Airwings';
+    font-size: 2.5rem;
+    margin: 10px 0px 5px 0px;
+    text-decoration: underline;
+}
+
+.terms-container p {
+    font-size: 25px;
+    width: 90%;
+    margin-left: 5px;
+}
+
+@media (max-width: 480px) {
+    .contact-card {
+        display: flex;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .card-right {
+        margin-top: 20px;
+    }
+}

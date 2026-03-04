@@ -1,0 +1,36 @@
+:root {
+  color: white;
+  background-color: #111;
+  font-family: 'Fabrik';
+  margin: 0px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Megatron';
+  src: url(/fonts/Megatron.otf);
+}
+
+@font-face {
+  font-family: 'RetroSerif';
+  src: url(/fonts/Retro-slab-serif.ttf);
+}
+
+@font-face {
+  font-family: 'Airwings';
+  src: url(/fonts/Airwings-Distressed.ttf);
+}
+
+@font-face {
+  font-family: 'Fabrik';
+  src: url(/fonts/fabrik.ttf);
+}
+
+@font-face {
+  font-family: 'SevenSegment';
+  src: url(/fonts/SevenSegment.ttf);
+}

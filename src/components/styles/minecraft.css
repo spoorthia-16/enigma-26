@@ -1,0 +1,479 @@
+/* 🌄 GLOBAL BACKGROUND */
+body {
+  margin: 0;
+  padding-top: 90px;
+  /* 🔥 MAIN FIX (pushes everything below navbar) */
+
+  font-family: 'VT323', monospace;
+
+  /* Replaced minecraft-bg.jpg with a solid dark grey/black background
+     to seamlessly continue from the deep scroll underground layer */
+  background-color: #111;
+
+  color: white;
+}
+
+/* 🧱 NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 14px 40px;
+  background: rgba(0, 0, 0, 0.5);
+
+  z-index: 9999;
+  /* 🔥 ensures always on top */
+}
+
+.nav-logo {
+  font-family: 'Press Start 2P';
+  font-size: 1.3rem;
+  color: #55ff55;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  font-size: 1.9rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #55ff55;
+}
+
+/* 🧱 MAIN SECTION */
+.mc-section {
+  margin: 0 auto 60px auto;
+  padding: 40px 0;
+  width: 85%;
+  max-width: 1100px;
+  text-align: center;
+}
+
+/* 🏔️ OVERLAY CONTENT */
+.content-overlay {
+  position: relative;
+  z-index: 20;
+  /* Pull the content up into the sticky parallax wrapper 
+     (480vh wrapper - 100vh viewport = roughly 380vh of empty scroll space) */
+  margin-top: -380vh;
+  padding-top: 15vh;
+  /* The background is removed here so the text floats transparently over 
+     the Minecraft parallax layers behind it. */
+}
+
+.solid-content-bg {
+  background: #111;
+  padding-top: 40px;
+  min-height: 100vh;
+}
+
+/* 🟨 TOP TEXT */
+.club-text {
+  font-family: 'Press Start 2P', monospace;
+  font-size: clamp(1.8rem, 2.5vw, 2.2rem);
+  color: #ffff55;
+  margin-bottom: 10px;
+}
+
+/* 🟩 MAIN TITLE (BIGGEST) */
+.main-logo {
+  font-family: 'Press Start 2P';
+  font-size: clamp(4.5rem, 9vw, 8rem);
+  color: #55ff55;
+
+  text-shadow:
+    6px 6px #003300,
+    10px 10px #000;
+
+  margin: 15px 0;
+}
+
+/* 🟧 SLOGAN */
+.slogan {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  color: #ffaa00;
+  text-shadow: 2px 2px black;
+
+  margin-bottom: 60px;
+}
+
+/* 🟩 SECTION TITLES */
+.mc-title {
+  font-family: 'Press Start 2P';
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: #55ff55;
+
+  margin-bottom: 30px;
+
+  text-shadow:
+    2px 2px #003300,
+    4px 4px #000;
+}
+
+/* 📄 PARAGRAPH TEXT */
+.mc-text {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  line-height: 1.8;
+
+  max-width: 900px;
+  margin: auto;
+
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* ⏱ COUNTDOWN */
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.countdown div {
+  text-align: center;
+}
+
+.countdown h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #55ff55;
+  text-shadow: 2px 2px #003300;
+}
+
+.countdown p {
+  font-size: 1.2rem;
+  color: #ddd;
+}
+
+/* 🧾 SCHEDULE */
+.schedule-item {
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  margin: 15px 0;
+}
+
+/* 🧱 SPONSORS */
+.sponsors {
+  margin-top: 80px;
+}
+
+.sponsor-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.sponsor-container img {
+  height: 70px;
+  transition: transform 0.3s ease;
+}
+
+.sponsor-container img:hover {
+  transform: scale(1.1);
+}
+
+/* ⌨️ CURSOR */
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  background: #55ff55;
+  margin-left: 6px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+  body {
+    padding-top: 100px;
+    /* extra for mobile navbar */
+  }
+
+  .countdown {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+}
+
+/* 🌄 PARALLAX HERO V2 (MULTI-STAGE SCROLL) */
+.mc-hero-scroll-wrapper {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  height: 480vh;
+  /* Provides the scrolling runway */
+  margin-top: -90px;
+}
+
+.mc-hero-viewport {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #000;
+}
+
+.layer {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.layer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Layer alignments */
+.layer-sky,
+.layer-clouds {
+  top: -10vh;
+  /* slight overshoot */
+  height: 120vh;
+}
+
+.layer-sky {
+  z-index: 1;
+}
+
+.layer-clouds {
+  z-index: 2;
+}
+
+.layer-text {
+  top: 25vh;
+  z-index: 3;
+  text-align: center;
+}
+
+.surface-group {
+  top: 100vh;
+  height: 105vh;
+  /* slightly overlap to prevent gaps */
+  z-index: 4;
+}
+
+.surface-focus {
+  top: 100vh;
+  height: 105vh;
+  z-index: 5;
+}
+
+.underground-group {
+  top: 200vh;
+  height: 100vh;
+  z-index: 6;
+}
+
+.fade-bottom {
+  bottom: 0;
+  height: 15vh;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 10;
+}
+
+@media (max-width: 768px) {
+  .mc-hero-scroll-wrapper {
+    margin-top: -100px;
+  }
+}
+
+/* 🏃‍♂️ ANIMATED SPRITES */
+.anim-pig {
+  position: absolute;
+  width: 88px;
+  height: 83px;
+  background: url('/head/animations/pig_idle.png') left center;
+  animation: sprite-pig 3.6s steps(36) infinite;
+  left: 10%;
+  bottom: 25%;
+}
+
+.anim-chicken {
+  position: absolute;
+  width: 64px;
+  height: 69px;
+  background: url('/head/animations/chicken_idle_front.png') left center;
+  animation: sprite-chicken 6s steps(93) infinite;
+  left: 65%;
+  bottom: 20%;
+}
+
+.anim-bee {
+  position: absolute;
+  width: 153px;
+  height: 146px;
+  background: url('/head/animations/bee_idle.png') left center;
+  animation: sprite-bee 8s steps(172) infinite;
+  left: 70%;
+  bottom: 50%;
+}
+
+.anim-bat {
+  position: absolute;
+  width: 165px;
+  height: 170px;
+  background: url('/head/animations/bat_flying.png') left center;
+  animation: sprite-bat 0.5s steps(4) infinite;
+  left: 30%;
+  bottom: 40%;
+}
+
+.anim-petals {
+  position: absolute;
+  pointer-events: none;
+}
+
+.anim-petals-back {
+  width: 512px;
+  height: 512px;
+  background: url('/head/animations/cherryBlossomPetals_back.png') left center;
+  animation: sprite-petals-back 5s steps(60) infinite;
+  right: 0;
+  top: 10%;
+}
+
+.anim-petals-front {
+  width: 256px;
+  height: 256px;
+  background: url('/head/animations/cherryBlossomPetals_front.png') left center;
+  animation: sprite-petals-front 10s steps(120) infinite;
+  right: 15%;
+  top: 30%;
+}
+
+@keyframes sprite-pig {
+  100% {
+    background-position: -3168px 0;
+  }
+}
+
+@keyframes sprite-chicken {
+  100% {
+    background-position: -5952px 0;
+  }
+}
+
+@keyframes sprite-bee {
+  100% {
+    background-position: -26316px 0;
+  }
+}
+
+@keyframes sprite-bat {
+  100% {
+    background-position: -660px 0;
+  }
+}
+
+@keyframes sprite-petals-back {
+  100% {
+    background-position: -30720px 0;
+  }
+}
+
+@keyframes sprite-petals-front {
+  100% {
+    background-position: -30720px 0;
+  }
+}
+
+
+
+/* 🐔 CHICKEN SEQUENCE WRAPPER */
+.chicken-wrapper {
+  position: absolute;
+  bottom: 120px;
+  z-index: 10;
+  transform: scale(1.5);
+  transition: left 5s linear;
+  /* Smooth walking translation between states */
+}
+
+/* Sequence States (Translating the wrapper across the grass) */
+.chicken-wrapper.seq-0 {
+  left: 15%;
+}
+
+.chicken-wrapper.seq-1 {
+  left: 35%;
+}
+
+.chicken-wrapper.seq-2 {
+  left: 35%;
+}
+
+.chicken-wrapper.seq-3 {
+  left: 15%;
+}
+
+/* Sequence 0 & 2: Idle Front (32 frames, 45x69 - approximated frame width) */
+.anim-chicken-idle-front {
+  width: 60px;
+  height: 69px;
+  background: url('/head/animations/chicken_idle_front.png') left center;
+  /* 1440 / 60 = 24 frames */
+  animation: sprite-chicken-idle 1.5s steps(24) infinite;
+}
+
+@keyframes sprite-chicken-idle {
+  100% {
+    background-position: -1440px 0;
+  }
+}
+
+/* Sequence 1: Turning Right-Front-Left & Walking (190 frames, 60x69) */
+.anim-chicken-turn-rfl {
+  width: 60px;
+  height: 69px;
+  background: url('/head/animations/chicken_turning_right_front_left.png') left center;
+  /* 11400 / 60 = 190 frames */
+  animation: sprite-chicken-rfl 5s steps(190) forwards;
+}
+
+@keyframes sprite-chicken-rfl {
+  100% {
+    background-position: -11400px 0;
+  }
+}
+
+/* Sequence 3: Turning Front-Left-Right & Walking (186 frames, 60x69) */
+.anim-chicken-turn-flr {
+  width: 60px;
+  height: 69px;
+  background: url('/head/animations/chicken_turning_front_left_right.png') left center;
+  /* 11160 / 60 = 186 frames */
+  animation: sprite-chicken-flr 5s steps(186) forwards;
+}
+
+@keyframes sprite-chicken-flr {
+  100% {
+    background-position: -11160px 0;
+  }
+}
