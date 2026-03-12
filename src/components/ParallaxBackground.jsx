@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const ParallaxBackground = ({ children, showTitleBlock = false }) => {
+const ParallaxBackground = ({ children, skyContent, showTitleBlock = false }) => {
     const [scrollY, setScrollY] = useState(0);
     const [chickenSequence, setChickenSequence] = useState(0);
 
@@ -24,7 +24,7 @@ const ParallaxBackground = ({ children, showTitleBlock = false }) => {
 
     return (
         <>
-            <section className="mc-hero-scroll-wrapper">
+            <section className="mc-hero-scroll-wrapper" style={{ minHeight: showTitleBlock ? '310vh' : '100vh' }}>
                 <div className="mc-hero-viewport">
 
                     {/* Sky Stage */}
@@ -40,20 +40,6 @@ const ParallaxBackground = ({ children, showTitleBlock = false }) => {
                         style={{ transform: `translateY(${scrollY * -0.3}px)` }}
                         alt="Clouds layer"
                     />
-
-                    {/* Hero Text in the Sky */}
-                    {showTitleBlock && (
-                        <div
-                            className="layer layer-text"
-                            style={{ transform: `translateY(${scrollY * -0.6}px)` }}
-                        >
-                            <p className="club-text">THE MALNAD TECHNICAL CLUB PRESENTS</p>
-                            <h1 className="mc-title">
-                                ENIGMA '26<span className="cursor"></span>
-                            </h1>
-                            <p className="slogan">UNLEASH THE MYSTERY OF TECHNOLOGY</p>
-                        </div>
-                    )}
 
                     {/* Surface Stage */}
                     <div
@@ -96,14 +82,35 @@ const ParallaxBackground = ({ children, showTitleBlock = false }) => {
                     {/* Bottom Fade */}
                     <div className="layer fade-bottom"></div>
 
-                </div>
-            </section>
+                    {/* Hero Text in the Sky (Moved to end for Z-Index foreground painting) */}
+                    {showTitleBlock && (
+                        <div
+                            className="layer layer-text"
+                            style={{ transform: `translateY(${scrollY * -0.6}px)` }}
+                        >
+                            <p className="club-text">THE MALNAD TECHNICAL CLUB PRESENTS</p>
+                            <h1 className="mc-title">
+                                ENIGMA '26<span className="cursor"></span>
+                            </h1>
+                            <p className="slogan">UNLEASH THE MYSTERY OF TECHNOLOGY</p>
+                            <div className="register-container">
+                                <a href="https://forms.gle/HixzKvzCgWBbtAhq9" target="_blank" rel="noopener noreferrer" className="register-btn">REGISTER</a>
+                            </div>
+                            {skyContent}
+                        </div>
+                    )}
 
-            {children && (
-                <div className="content-overlay">
-                    {children}
                 </div>
-            )}
+
+                {children && (
+                    <div
+                        className="content-overlay"
+                        style={{ marginTop: showTitleBlock ? '210vh' : '-100vh' }}
+                    >
+                        {children}
+                    </div>
+                )}
+            </section>
         </>
     );
 };

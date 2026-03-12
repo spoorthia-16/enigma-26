@@ -1,8 +1,8 @@
 import ParallaxBackground from './ParallaxBackground';
 
-const Hero = ({ children }) => {
+const Hero = ({ children, skyContent }) => {
   return (
-    <ParallaxBackground showTitleBlock={true}>
+    <ParallaxBackground showTitleBlock={true} skyContent={skyContent}>
       {children}
     </ParallaxBackground>
   );

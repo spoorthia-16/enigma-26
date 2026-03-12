@@ -32,16 +32,16 @@ const ContactDetails = ({ children }) => {
                             <span>Marketing and Publicity</span>
                         </div>
                         <div className='card-right'>
-                            <a href='tel:+918431121367'>Ph: +91 7624840897</a>
+                            <a href='tel:+917624840897'>Ph: +91 7624840897</a>
                         </div>
                     </div>
                     <div className='contact-card'>
                         <div className='card-left'>
-                            <p>Tejas Noojile</p>
-                            <span>Event Coordinator</span>
+                            <p>Sanjana A</p>
+                            <span>Internal Affairs</span>
                         </div>
                         <div className='card-right'>
-                            <a href='tel:+919742845340'>+91 9742845340</a>
+                            <a href='tel:+917483735220'>Ph: +91 7483735220</a>
                         </div>
                     </div>
                     <div className='contact-card'>

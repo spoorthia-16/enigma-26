@@ -7,10 +7,13 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <Hero>
-      <CountDown />
-      <About />
-      <Schedule />
+    <Hero skyContent={
+      <>
+        <CountDown />
+        <About />
+        <Schedule />
+      </>
+    }>
       <div className="solid-content-bg">
         <Sponsors />
         <Footer showOtherSites />

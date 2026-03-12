@@ -40,8 +40,9 @@
   transition: 0.3s;
 }
 
-/* HOVER EFFECT */
-.nav-links a:hover {
+/* HOVER AND ACTIVE EFFECT */
+.nav-links a:hover,
+.nav-links a.active {
   color: #55ff55;
   text-shadow: 0 0 5px #55ff55;
 }

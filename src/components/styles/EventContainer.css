@@ -1,7 +1,7 @@
 .container-design {
     width: 90%;
     display: flex;
-    background-color: #D3B998;
+    background-color: rgba(211, 185, 152, 0.75);
     color: #2C2C22;
     font-size: 25px;
     gap: 20px;
@@ -10,6 +10,7 @@
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 30px;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
 }
 
 .container-design img {

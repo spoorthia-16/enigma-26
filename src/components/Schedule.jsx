@@ -10,18 +10,18 @@ const fourth = [0,0,0,1]
 
 
 const Schedule = () => {
-    const [date, setDate] = useState("18");
+    const [date, setDate] = useState("26");
     const [myClass, setMyClass] = useState(first);
 
     const handleClick = (date) => {
         setDate(date);
-        if(date === "18"){
+        if(date === "26"){
             setMyClass(first);
-        }else if(date === "19"){
+        }else if(date === "27"){
             setMyClass(second);
-        }else if(date === "20"){
+        }else if(date === "28"){
             setMyClass(third);
-        }else if(date === "21"){
+        }else if(date === "29"){
             setMyClass(fourth);
         }
     };
@@ -33,24 +33,24 @@ const Schedule = () => {
             </div>
             <div className='schedule-container'>
                 <div className='scheduleDates'>
-                    <div onClick={()=>{handleClick("18")}} className={myClass === first  ? "activeDiv" : "previous"}>
-                        <h1>18<span>TH</span></h1>
+                    <div onClick={()=>{handleClick("26")}} className={myClass === first  ? "activeDiv" : "previous"}>
+                        <h1>26<span>TH</span></h1>
                     </div>
-                    <div onClick={()=>{handleClick("19")}} className={myClass === second ? "activeDiv" : "previous"}>
-                        <h1>19<span>TH</span></h1>
+                    <div onClick={()=>{handleClick("27")}} className={myClass === second ? "activeDiv" : "previous"}>
+                        <h1>27<span>TH</span></h1>
                     </div>
-                    <div onClick={()=>{handleClick("20")}} className={myClass === third ? "activeDiv" : "previous"}>
-                        <h1>20<span>TH</span></h1>
+                    <div onClick={()=>{handleClick("28")}} className={myClass === third ? "activeDiv" : "previous"}>
+                        <h1>28<span>TH</span></h1>
                     </div>
-                    <div onClick={()=>{handleClick("21")}} className={myClass === fourth?  "activeDiv" : "previous"}>
-                        <h1>21<span>ST</span></h1>
+                    <div onClick={()=>{handleClick("29")}} className={myClass === fourth?  "activeDiv" : "previous"}>
+                        <h1>29<span>TH</span></h1>
                     </div>
                 </div>
                 <div className='scheduleContent'>
-                    {date === "18" && <ScheduleContent Data={Data} num={0}/>}
-                    {date === "19" && <ScheduleContent Data={Data} num={1}/>}
-                    {date === "20" && <ScheduleContent Data={Data} num={2}/>}
-                    {date === "21" && <ScheduleContent Data={Data} num={3}/>}
+                    {date === "26" && <ScheduleContent Data={Data} num={0}/>}
+                    {date === "27" && <ScheduleContent Data={Data} num={1}/>}
+                    {date === "28" && <ScheduleContent Data={Data} num={2}/>}
+                    {date === "29" && <ScheduleContent Data={Data} num={3}/>}
                 </div>
             </div>
         </div>

@@ -1,75 +1,76 @@
 const scheduleContent = [
     [
         {
-            timings: "5.30 PM",
-            eventName: "Ingenium",
+            timings: "5:30 PM",
+            eventName: "Inginium",
             eventLoc: "SA 101"
         },
         {
-            timings: "6.15 PM",
+            timings: "6:15 PM",
             eventName: "Playbytes",
             eventLoc: "SA 201"
+        },
+        {
+            timings: "5:30 PM",
+            eventName: "Resonance",
+            eventLoc: "SA 102"
+        },
+        {
+            timings: "6:15 PM",
+            eventName: "Inquizitive",
+            eventLoc: "SA 202"
         }
-
     ],
     [
         {
-            timings: "5.30 PM",
-            eventName: "Resonance",
+            timings: "5:30 PM",
+            eventName: "Megastructure",
             eventLoc: "SA 101"
         },
         {
-            timings: "6.15 PM",
-            eventName: "Inquizitive",
-            eventLoc: "SA 201"
+            timings: "All Day",
+            eventName: "Paper Events (Round 2)",
+            eventLoc: "Various"
         }
-
     ],
     [
         {
-            timings: "1.00 PM",
-            eventName: "Megastructure",
-            eventLoc: "SA 201"
-        },
-        {
-            timings: "5.00 PM",
-            eventName: "Lazer Show",
+            timings: "5:30 PM",
+            eventName: "Laser Show",
             eventLoc: "Auditorium"
-        },
+        }
     ],
     [
         {
             timings: "8:30 AM",
-            eventName: "National Level Paper Presentation",
-            eventLoc: "Mechanical Seminar Hall"
+            eventName: "NPP",
+            eventLoc: "Alumni Hall"
         },
         {
-            timings: "8.30 AM",
-            eventName: "Mystique Locomoter",
+            timings: "8:30 AM",
+            eventName: "Mystic Locomotor",
             eventLoc: "Auditorium"
         },
         {
-            timings: "9.00 AM",
+            timings: "9:00 AM",
             eventName: "Aeronautica",
-            eventLoc: "Handball Ground"
+            eventLoc: "Hand Ball Ground"
         },
         {
-            timings: "11.00 AM",
+            timings: "10:00 AM",
             eventName: "Robokombat",
             eventLoc: "Auditorium"
         },
         {
-            timings: "12.00 PM",
+            timings: "12:00 PM",
             eventName: "Drift Blitz",
-            eventLoc: "Handball ground"
+            eventLoc: "Hand Ball Ground"
         },
         {
-            timings: "2.00 PM",
+            timings: "2:00 PM",
             eventName: "Robo Soccer",
             eventLoc: "Auditorium"
-        },
-        
-        
+        }
     ]
 ]
 
