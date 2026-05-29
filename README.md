@@ -6,19 +6,30 @@ Enigma'26 is the official website developed for the annual technical fest of The
 # Features
 
 Modern and responsive UI/UX
+
 Event showcase and details section
+
 Countdown timer for the event
-Registration and participation information
+
+Registration and participation 
+information
+
 Announcements and updates
+
 Interactive animations and smooth navigation
+
 Mobile, tablet, and desktop compatibility
 
 # Technologies Used
 
 HTML5
+
 CSS3
+
 JavaScript
+
 Vite
+
 Responsive Web Design
 
 Enigma'26 – Where Innovation Meets Excellence. 🚀✨
