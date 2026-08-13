@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Test</title>
+    <style>
+        body {
+            background: #333;
+            padding: 20px;
+        }
+
+        .img-test {
+            display: block;
+            border: 1px solid lime;
+            margin-bottom: 20px;
+            max-width: 100%;
+        }
+
+        .anim-container {
+            width: 1316px;
+            height: 1316px;
+            border: 5px solid red;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+
+        .waterfall-anim {
+            width: 4788px;
+            /* 3 frames? */
+            height: 1316px;
+            background: url('/head/animations/waterfall.png');
+            animation: water 3s steps(3) infinite;
+        }
+
+        @keyframes water {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-3948px);
+            }
+
+            /* or maybe something else? */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Waterfall (4788x1316)</h2>
+    <img class="img-test" src="/head/animations/waterfall.png">
+
+    <div class="anim-container">
+        <div class="waterfall-anim"></div>
+    </div>
+
+    <h2>Chicken turning front left right (11160x69)</h2>
+    <img class="img-test" src="/head/animations/chicken_turning_front_left_right.png">
+</body>
+
+</html>
