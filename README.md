@@ -1,8 +1,35 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Description
 
-Currently, two official plugins are available:
+Enigma'26 is the official website developed for the annual technical fest of The Malnad Technical Club. The platform is designed to provide participants with complete event information, including event details, schedules, registrations, announcements, and updates through an engaging and responsive user interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Features
+
+Modern and responsive UI/UX
+
+Event showcase and details section
+
+Countdown timer for the event
+
+Registration and participation 
+information
+
+Announcements and updates
+
+Interactive animations and smooth navigation
+
+Mobile, tablet, and desktop compatibility
+
+# Technologies Used
+
+HTML5
+
+CSS3
+
+JavaScript
+
+Vite
+
+Responsive Web Design
+
+Enigma'26 – Where Innovation Meets Excellence. 🚀✨
